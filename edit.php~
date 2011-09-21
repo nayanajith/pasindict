@@ -2,17 +2,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <body>
 <?php
-    include("db.php");
     $searchterm = $_POST['pali'];
-    $meaning = "[ ".$_POST['sinps']." ] ".$_POST['sindef'];
-    $searchterm = trim ($searchterm);
-    $meaning = trim ($meaning);
+    $meaning = $_POST['meaning'];
+    trim ($searchterm);
+    trim ($meaning);
     /*check if search term was entered*/
     if (!$searchterm){
         echo 'සෙවීම සදහා පාලි වචනයක් ලබා දෙන්න.';
     }
-    mysql_connect($db_host, $db_user, $db_pass) or die(mysql_error());
-    mysql_select_db($db_name) or die(mysql_error());
+    mysql_connect("localhost", "11205", "madman911") or die(mysql_error());
+    mysql_select_db("11205db2") or die(mysql_error());
     mysql_set_charset('utf8');
     $result = mysql_query("SELECT * FROM dict WHERE pali LIKE '".$searchterm."' COLLATE utf8_general_ci;"); 
     $row = mysql_fetch_assoc($result);

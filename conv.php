@@ -13,7 +13,7 @@
         list($ps, $def) = explode("]", $row['sin']);
         $ps = trim(str_replace("[", "", $ps));
         $def = trim($def);
-        echo "'".$row['pali']."'<br>";
+        echo $f." '".$row['pali']."'<br>";
         echo "<form action=\"conv_def.php?\" method=\"get\" target=\"_blank\">
             <input type=\"hidden\" name=\"pali\" value=\"".$row['pali']."\"><br>
             <input type=\"text\" name=\"sinps\"  size=\"10\" value=\"".$ps."\">
