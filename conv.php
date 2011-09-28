@@ -7,7 +7,7 @@
     mysql_connect($db_host, $db_user, $db_pass) or die(mysql_error());
     mysql_select_db($db_name) or die(mysql_error());
     mysql_set_charset('utf8');
-    $result = mysql_query("SELECT * FROM dict WHERE LOWER(sin) RLIKE '\].[a-z]' COLLATE utf8_general_ci ;"); 
+    $result = mysql_query("SELECT * FROM dict WHERE LOWER(sin) RLIKE '\].[a-z]' OR LOWER(new_sin) RLIKE '\].[a-z]' COLLATE utf8_general_ci ;"); 
     $f=0;
     while ($row = mysql_fetch_assoc($result)) {
         list($ps, $def) = explode("]", $row['sin']);

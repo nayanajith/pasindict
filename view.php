@@ -8,6 +8,7 @@
     /*check if search term was entered*/
     if (!$searchterm){
         echo 'සෙවීම සදහා පාලි වචනයක් ලබා දෙන්න.';
+        exit(1);
     }
     mysql_connect($db_host, $db_user, $db_pass) or die(mysql_error());
     echo "<br><center><u>ප්‍රතිඵල</u></center><br>";
