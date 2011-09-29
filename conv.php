@@ -1,6 +1,6 @@
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<p>Convert English meanings to Sinhalese</p>
+<p>Convert English meanings to Sinhala</p>
 <body>
 <?php
     include("db.php");

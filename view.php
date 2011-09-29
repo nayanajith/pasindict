@@ -16,6 +16,7 @@
     mysql_set_charset('utf8');
     $result = mysql_query("SELECT * FROM dict WHERE pali LIKE '".$searchterm."' COLLATE utf8_general_ci;");
     $row = mysql_fetch_assoc($result);
+    $f=0;
     if ($row){
         echo "&nbsp;".($f+1).". '".$row['pali']."'<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$row['sin'];
     } else {
