@@ -1,0 +1,46 @@
+READ ME
+
+Tables that need to be present in the database.
+
+Look up table
+	The maintable that's used for looking up pali words.
+
+	dict{
+		pali varchar(30); #primary key
+		sin varchar(512); #look up
+		new_sin varchar(512); #new additions go here
+	}
+
+Non look up table
+	Only for addition of new pali words.
+
+	new_dict{
+		pali varchar(30); #primary key
+		sin varchar(512);
+	}
+
+User authentication
+	As of now, this table is maintained manually. The system only uses it to keep track of logins.
+
+	auth {
+		user varchar(20);
+		pass varchar(128);
+		temp varchar(64);
+	}
+Commit History
+
+	commits {
+		user varchar(20);
+		pali varchar(30);
+		day date;
+	}
+PHP files that need admin maintenance
+
+db.php
+	<?php
+	    $db_user="root"; 
+	    $db_name="dict";
+	    $db_pass="";
+	    $db_host="localhost";
+	?>
+
