@@ -1,6 +1,6 @@
 <?php
     $db_user="root";
-    $db_name="dict";
-    $db_pass="";
+    $db_name="test";
+    $db_pass="madman1";
     $db_host="localhost";
 ?>

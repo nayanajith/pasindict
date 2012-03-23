@@ -3,7 +3,13 @@
 <body>
 <?php
     include("db.php");
+    include("util.php");
     $searchterm = $_POST['pali'];
+
+    check_submit($_POST['pali']);
+    check_submit($_POST['sinps']);
+    check_submit($_POST['sindef']);    
+    
     $meaning = "[ ".$_POST['sinps']." ] ".$_POST['sindef'];
     $searchterm = trim ($searchterm);
     $meaning = trim ($meaning);

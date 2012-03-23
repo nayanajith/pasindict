@@ -9,11 +9,9 @@
     mysql_set_charset('utf8');
     if (isset($_GET['sinps']) && isset($_GET['sindef']) && isset($_GET['pali']) ) {
         include("util.php");
-        if (checkSubmit($_GET['sinps']) == FALSE or checkSubmit($_GET['sindef']) == FALSE) {
-            echo "<center><h2>සාවද්‍ය සංඛේත ඉවත් කරන්න.</h2></center>";
-            echo "<br><br>";
-            exit(1);
-        }
+        check_submit($_GET['sinps']);
+        check_submit($_GET['sindef']);
+        
         if (trim($_GET['sinps'])!="" && trim($_GET['sindef'])!="" && trim($_GET['pali'])!="" ){
             $sin = "[ ".$_GET['sinps']." ] ".$_GET['sindef'];
             $result = mysql_query("UPDATE dict SET new_sin='".$sin."' WHERE pali LIKE '".$_GET['pali']."'  COLLATE utf8_general_ci ;");     
@@ -35,7 +33,7 @@
             <input type=\"hidden\" name=\"pali\" value=\"".$row['pali']."\"><br>
             <input type=\"text\" name=\"sinps\"  size=\"10\" value=\"".$ps."\">
             <input type=\"text\" name=\"sindef\" size=\"100\" value=\"".$def."\"><br>
-            <input type=\"submit\" value=\"change\" onclick=\"refresh();\"/>
+            <input type=\"submit\" value=\"change\" />
             </form>";
         echo "<br><br>";
         $f = $f +1;
