@@ -10,16 +10,19 @@
    		list($user, $temp) = explode("|", $auth);
    		$result = mysql_query("SELECT * FROM auth WHERE user LIKE '".$user."' AND temp LIKE '".$temp."'");
 		$row = mysql_fetch_assoc($result);
+		$auth_user = null;
 		if ($row){
 			// authenticated
 			echo "<center><table border=0 width=90%><tr>
-			<td>Hello, ".$user.".<a>  </a><a href=\"./mod_home.php\">Home</a>
+			<td>Hello, ".$user.".<a>  </a><a href=\".\">Home</a> <a href=\"./mod_home.php\">User Home</a>
 			</td>
-			<td align=\"right\"><a href=\"./chng_pass.php\">Change Password</a><a> </a> 
+			<td align=\"right\"><a href=\"./mod_changepass.php\">Change Password</a><a> </a> 
 				<a href=\"./logout.php\">Log Out</a></td>
 			</tr></table></center>";
 			// renew user session
-			setcookie("auth",$auth,time()+$user_session_time);
+
+			setcookie("auth",$auth,time()+$config_session_time);
+			$auth_user = $user;
 		} else {
 			// warn
 			echo "<center><h3>
