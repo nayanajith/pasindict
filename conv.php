@@ -41,7 +41,7 @@ Released   : 20090820
 		<ul>
 			<li class="current_page_item"><a href=".">Home</a></li>
 			<li><a href="./login.php">Login</a></li>
-			<li><a href="./conv.php">Convert English meanings/definitions to Sinhalese.</a></li>
+			<li><a href="./conv.php">Convert English meanings/definitions to Sinhala.</a></li>
 		</ul>
 	</div>
 	<!-- end #menu -->
@@ -109,7 +109,7 @@ Released   : 20090820
 </div>
 <div id="footer-wrapper">
 	<div id="footer">
-		<p>Copyright (c) 2008 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+		<p>Copyright (c) 2012 PALISINDICTIONARY.</p>
 	</div>
 	<!-- end #footer -->
 </div>

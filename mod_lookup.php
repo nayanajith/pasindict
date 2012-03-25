@@ -59,7 +59,7 @@ function submit_delete(pali)
 		<ul>
 			<li class="current_page_item"><a href=".">Home</a></li>
 			<li><a href="./login.php">Login</a></li>
-			<li><a href="./conv.php">Convert English meanings/definitions to Sinhalese.</a></li>
+			<li><a href="./conv.php">Convert English meanings/definitions to Sinhala.</a></li>
 		</ul>
 	</div>
 	<!-- end #menu -->
@@ -133,7 +133,7 @@ function submit_delete(pali)
 </div>
 <div id="footer-wrapper">
 	<div id="footer">
-		<p>Copyright (c) 2008 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+		<p>Copyright (c) 2012 PALISINDICTIONARY.</p>
 	</div>
 	<!-- end #footer -->
 </div>
