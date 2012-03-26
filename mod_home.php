@@ -63,8 +63,8 @@ Released   : 20090820
 					<?php
 						include("auth.php");
 					?>
-					<a href="./mod_lookup.php">Moderate Primary Table</a><br>
-					<a href="./mod_new.php">Moderate Secondary Table</a>
+					<a href="./mod_lookup.php">Moderate Changes Table</a><br>
+					<a href="./mod_new.php">Moderate New Additions Table</a>
 				</div>
 			</div>
 

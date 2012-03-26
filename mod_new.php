@@ -26,14 +26,6 @@ Released   : 20090820
 			<h1><a href="#">පාලි සිංහල ශබ්දකෝෂය   </a></h1>
 			<p></p>
 		</div>
-		<div id="search">
-			<form method="get" action="">
-				<fieldset>
-				<input type="text" name="s" id="search-text" size="15" value="enter keywords here..." />
-				<input type="submit" id="search-submit" value="GO" />
-				</fieldset>
-			</form>
-		</div>
 	</div>
 	</div>
 	<!-- end #header -->
@@ -100,7 +92,7 @@ Released   : 20090820
 </div>
 <div id="footer-wrapper">
 	<div id="footer">
-		<p>Copyright (c) 2008 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+		<p>Copyright (c) 2012 PALISINDICTIONARY.</p>
 	</div>
 	<!-- end #footer -->
 </div>
